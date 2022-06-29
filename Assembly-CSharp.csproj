@@ -55,10 +55,11 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Controller.cs" />
     <Compile Include="Assets\Scripts\EnableButton.cs" />
+    <Compile Include="Assets\Scripts\MetalMov.cs" />
     <Compile Include="Assets\Scripts\ChangeScene.cs" />
     <Compile Include="Assets\Scripts\Switch.cs" />
     <Compile Include="Assets\Scripts\Magnets.cs" />
-    <Compile Include="Assets\Scripts\MetalMov.cs" />
+    <Compile Include="Assets\Scripts\Magnet2.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
