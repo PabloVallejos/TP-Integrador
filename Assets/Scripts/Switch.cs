@@ -13,7 +13,7 @@ public class Switch : MonoBehaviour
         {
             collision.gameObject.transform.position = gameObject.transform.position;
             collision.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
-            collision.GetComponent<Magnets>().enabled = false;
+            //collision.GetComponent<Magnets>().enabled = false;
             on = true;
         }
     }

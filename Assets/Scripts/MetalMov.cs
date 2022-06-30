@@ -6,7 +6,7 @@ public class MetalMov : MonoBehaviour
 {
     public GameObject[] points;
     public float speed;
-    private int i;
+    public int i;
     private bool dir;
 
     private void Start()

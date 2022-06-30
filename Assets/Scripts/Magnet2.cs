@@ -5,16 +5,13 @@ using UnityEngine;
 public class Magnet2 : MonoBehaviour
 {
     public Transform tg;
-    public FrictionJoint2D joint;
     public string pole;
     public float speed;
     public bool mag;
-    public bool rep;
 
     private void Start()
     {
         mag = false;
-        rep = false;
     }
 
     void FixedUpdate()
@@ -22,12 +19,7 @@ public class Magnet2 : MonoBehaviour
         if (mag == true && tg != null)
         {
             var step = speed * Time.deltaTime;
-            transform.position = Vector2.MoveTowards(transform.position, tg.position, step);
-        }
-        if (rep == true && tg != null)
-        {
-            var step = -speed * Time.deltaTime;
-            transform.position = Vector2.MoveTowards(transform.position, tg.position, step);
+            tg.position = Vector2.MoveTowards(tg.position, transform.position, step);
         }
     }
 
@@ -39,11 +31,6 @@ public class Magnet2 : MonoBehaviour
             tg = collision.gameObject.transform;
             Debug.Log("Got em");
         }
-        if (collision.gameObject.tag == gameObject.tag)
-        {
-            rep = true;
-            tg = collision.gameObject.transform;
-        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -51,12 +38,11 @@ public class Magnet2 : MonoBehaviour
         if (collision.gameObject.tag == pole)
         {
             mag = false;
-            joint.connectedBody = collision.gameObject.GetComponent<Rigidbody2D>();
         }
         if (collision.gameObject.tag == "M")
         {
             mag = false;
-            joint.connectedBody = collision.gameObject.GetComponent<Rigidbody2D>();
+            tg.transform.SetParent(this.gameObject.transform);
         }
     }
 
@@ -65,13 +51,13 @@ public class Magnet2 : MonoBehaviour
         if (collision.gameObject.tag == pole || collision.gameObject.tag == "M")
         {
             mag = true;
-            joint.connectedBody = null;
+            tg.transform.SetParent(null);
             Debug.Log("Got em");
         }
         if (collision.gameObject.tag == "M")
         {
             mag = false;
-            joint.connectedBody = null;
+            tg.transform.SetParent(null);
         }
     }
 
@@ -80,11 +66,6 @@ public class Magnet2 : MonoBehaviour
         if (collision.gameObject.tag == "Pole" || collision.gameObject.tag == "M")
         {
             mag = false;
-            tg = null;
-        }
-        if (collision.gameObject.tag == gameObject.tag)
-        {
-            rep = false;
             tg = null;
         }
     }

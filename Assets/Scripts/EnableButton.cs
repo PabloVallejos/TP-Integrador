@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class EnableButton : MonoBehaviour
 {
     public Button boton;
+    public DragNDrop DND;
     public Switch[] s;
     private bool done;
 
@@ -13,6 +14,7 @@ public class EnableButton : MonoBehaviour
     {
         boton.enabled = false;
         boton.image.enabled = false;
+        DND = FindObjectOfType<DragNDrop>();
     }
 
     private void Update()
@@ -29,6 +31,7 @@ public class EnableButton : MonoBehaviour
         {
             boton.enabled = true;
             boton.image.enabled = true;
+            DND.enabled = false;
         }
     }
 }

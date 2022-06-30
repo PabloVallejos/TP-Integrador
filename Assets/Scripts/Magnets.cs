@@ -4,29 +4,38 @@ using UnityEngine;
 
 public class Magnets : MonoBehaviour
 {
-    public Transform tg;
+    public Transform tgm;
+    public Transform tgr;
+    public Transform tgk;
     public string pole;
     public float speed;
     public bool mag;
     public bool rep;
+    bool atr;
 
     private void Start()
     {
         mag = false;
         rep = false;
+        atr = false;
     }
 
     void FixedUpdate()
     {
-        if (mag == true && tg != null)
+        if (mag == true && tgm != null)
         {
             var step = speed * Time.deltaTime;
-            transform.position = Vector2.MoveTowards(transform.position, tg.position, step);
+            transform.position = Vector2.MoveTowards(transform.position, tgm.position, step);
         }
-        if (rep == true && tg != null)
+        if (rep == true && tgr != null)
         {
             var step = -speed * Time.deltaTime;
-            transform.position = Vector2.MoveTowards(transform.position, tg.position, step);
+            transform.position = Vector2.MoveTowards(transform.position, tgr.position, step);
+        }
+        if (atr == true && tgk != null)
+        {
+            var step = speed * Time.deltaTime;
+            tgk.position = Vector2.MoveTowards(tgk.position, transform.position, step);
         }
     }
 
@@ -35,13 +44,18 @@ public class Magnets : MonoBehaviour
         if (collision.gameObject.tag == pole || collision.gameObject.tag == "M")
         {
             mag = true;
-            tg = collision.gameObject.transform;
+            tgm = collision.gameObject.transform;
             Debug.Log("Got em");
         }
         if (collision.gameObject.tag == gameObject.tag)
         {
             rep = true;
-            tg = collision.gameObject.transform;
+            tgr = collision.gameObject.transform;
+        }
+        if (collision.gameObject.tag == "Key")
+        {
+            atr = true;
+            tgk = collision.gameObject.transform;
         }
     }
 
@@ -54,7 +68,12 @@ public class Magnets : MonoBehaviour
         if (collision.gameObject.tag == "M")
         {
             mag = false;
-            gameObject.transform.SetParent(collision.gameObject.transform);
+            gameObject.transform.SetParent(tgm.transform);
+        }
+        if (collision.gameObject.tag == "Key")
+        {
+            atr = false;
+            tgk.SetParent(gameObject.transform);
         }
     }
 
@@ -63,13 +82,18 @@ public class Magnets : MonoBehaviour
         if (collision.gameObject.tag == pole || collision.gameObject.tag == "M")
         {
             mag = true;
-            tg = collision.gameObject.transform;
+            tgm = collision.gameObject.transform;
             Debug.Log("Got em");
         }
         if (collision.gameObject.tag == "M")
         {
             mag = false;
             gameObject.transform.SetParent(null);
+        }
+        if (collision.gameObject.tag == "Key")
+        {
+            atr = true;
+            tgk.SetParent(null);
         }
     }
 
@@ -78,12 +102,17 @@ public class Magnets : MonoBehaviour
         if (collision.gameObject.tag == "Pole" || collision.gameObject.tag == "M")
         {
             mag = false;
-            tg = null;
+            tgm = null;
         }
         if (collision.gameObject.tag == gameObject.tag)
         {
             rep = false;
-            tg = null;
+            tgr = null;
+        }
+        if (collision.gameObject.tag == "Key")
+        {
+            atr = false;
+            tgk = null;
         }
     }
 }

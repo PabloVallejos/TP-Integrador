@@ -8,6 +8,8 @@ TagManager:
   - N
   - M
   - Repulsor
+  - Hole
+  - Key
   layers:
   - Default
   - TransparentFX
@@ -21,8 +23,8 @@ TagManager:
   - Metal
   - N
   - S
-  - 
-  - 
+  - Key
+  - Walls
   - 
   - 
   - 
