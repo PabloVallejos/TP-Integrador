@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/LVL select.unity
+    guid: 13a490615b87db343a7fa6dfd8ecb556
+  - enabled: 1
     path: Assets/Scenes/Puzzle 1.unity
     guid: 975c46f377a8f4b44883beb198622427
   - enabled: 1
