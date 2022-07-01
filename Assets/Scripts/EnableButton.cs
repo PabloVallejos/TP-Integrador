@@ -17,7 +17,7 @@ public class EnableButton : MonoBehaviour
         DND = FindObjectOfType<DragNDrop>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         for(int i = 0; i < s.Length; i++)
         {
@@ -25,13 +25,25 @@ public class EnableButton : MonoBehaviour
             { 
                 done = false;
             }
-            else { done = true; }
+            else 
+            { 
+                if (s[i].on == true)
+                {
+                    done = true;
+                }
+            }
         }
         if (done == true)
         {
             boton.enabled = true;
             boton.image.enabled = true;
             DND.enabled = false;
+        }
+        if (done == false)
+        {
+            boton.enabled = false;
+            boton.image.enabled = false;
+            DND.enabled = true;
         }
     }
 }
