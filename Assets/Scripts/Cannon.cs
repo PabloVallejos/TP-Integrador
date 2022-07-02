@@ -7,6 +7,7 @@ public class Cannon : MonoBehaviour
     public GameObject mag;
     public GameObject muzzle;
     public int times;
+    private float timer;
 
     void FixedUpdate()
     {
@@ -19,11 +20,17 @@ public class Cannon : MonoBehaviour
         float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
 
-        if (Input.GetMouseButtonDown(0) && times > 0)
+        if (timer > 0)
+        {
+            timer = timer - Time.deltaTime;
+        }
+
+        if (Input.GetMouseButton(0) && times > 0 && timer <= 0)
         {
             times--;
             GameObject bull = Instantiate(mag, muzzle.transform.position, Quaternion.identity);
             bull.GetComponent<Rigidbody2D>().AddForce(gameObject.transform.right * 500f, ForceMode2D.Force);
+            timer = 1f;
         }
     }
 }

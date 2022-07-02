@@ -183,7 +183,6 @@ MonoBehaviour:
   bull: {fileID: 8562591389644611439, guid: 81a06154a5616ea4aaefd2156f8df017, type: 3}
   muzzle: {fileID: 8408599888534045965}
   Stimer: 100
-  force: 50
 --- !u!58 &8408599888293821687
 CircleCollider2D:
   m_ObjectHideFlags: 0
