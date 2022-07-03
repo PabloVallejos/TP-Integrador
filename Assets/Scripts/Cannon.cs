@@ -25,7 +25,7 @@ public class Cannon : MonoBehaviour
             timer = timer - Time.deltaTime;
         }
 
-        if (Input.GetMouseButton(0) && times > 0 && timer <= 0)
+        if (Input.GetKeyDown(KeyCode.LeftControl) && times > 0 && timer <= 0)
         {
             times--;
             GameObject bull = Instantiate(mag, muzzle.transform.position, Quaternion.identity);

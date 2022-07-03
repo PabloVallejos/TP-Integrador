@@ -19,7 +19,8 @@ public class Shooter : MonoBehaviour
         timer--;
         if (timer <= 0) 
         {
-            Instantiate(bull, muzzle.position, gameObject.transform.rotation);
+            var bul = Instantiate(bull, muzzle.position, gameObject.transform.rotation);
+            bul.GetComponent<Rigidbody2D>().AddForce(Vector2.right * 25, ForceMode2D.Impulse);
             timer = Stimer;
         }
     }

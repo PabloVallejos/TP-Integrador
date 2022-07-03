@@ -129,6 +129,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   speed: 3
+  i: 0
 --- !u!50 &4726781092291396787
 Rigidbody2D:
   serializedVersion: 4
@@ -162,7 +163,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 471748a1d4da4a642b55f36d829c640e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tg: {fileID: 0}
+  tgm: {fileID: 0}
+  tgr: {fileID: 0}
+  tgk: {fileID: 0}
   pole: 
   speed: 5
   mag: 0
