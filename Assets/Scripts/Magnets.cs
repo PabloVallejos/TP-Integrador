@@ -115,4 +115,17 @@ public class Magnets : MonoBehaviour
             tgk = null;
         }
     }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision == null)
+        {
+            mag = false;
+            tgm = null;
+            rep = false;
+            tgr = null;
+            atr = false;
+            tgk = null;
+        }
+    }
 }

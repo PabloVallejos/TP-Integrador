@@ -6,7 +6,6 @@ public class Cannon : MonoBehaviour
 {
     public GameObject mag;
     public GameObject muzzle;
-    public int times;
     private float timer;
 
     void FixedUpdate()
@@ -25,9 +24,8 @@ public class Cannon : MonoBehaviour
             timer = timer - Time.deltaTime;
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftControl) && times > 0 && timer <= 0)
+        if (Input.GetKeyDown(KeyCode.LeftControl) && timer <= 0)
         {
-            times--;
             GameObject bull = Instantiate(mag, muzzle.transform.position, Quaternion.identity);
             bull.GetComponent<Rigidbody2D>().AddForce(gameObject.transform.right * 500f, ForceMode2D.Force);
             timer = 1f;

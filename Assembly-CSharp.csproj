@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\DragNDrop.cs" />
     <Compile Include="Assets\Scripts\Magnets.cs" />
     <Compile Include="Assets\Scripts\Joints.cs" />
+    <Compile Include="Assets\Scripts\LVLName.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
