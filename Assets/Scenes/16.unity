@@ -166,7 +166,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7038184545645552258, guid: ffcffef40903ec647998d3be7bba921d, type: 3}
       propertyPath: m_LocalScale.y
-      value: 8.807483
+      value: 8.528285
       objectReference: {fileID: 0}
     - target: {fileID: 7038184545645552258, guid: ffcffef40903ec647998d3be7bba921d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -174,7 +174,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7038184545645552258, guid: ffcffef40903ec647998d3be7bba921d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.6
+      value: 0.7398
       objectReference: {fileID: 0}
     - target: {fileID: 7038184545645552258, guid: ffcffef40903ec647998d3be7bba921d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1307,7 +1307,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7038184545645552258, guid: ffcffef40903ec647998d3be7bba921d, type: 3}
       propertyPath: m_LocalScale.y
-      value: 8.807483
+      value: 8.528285
       objectReference: {fileID: 0}
     - target: {fileID: 7038184545645552258, guid: ffcffef40903ec647998d3be7bba921d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1315,7 +1315,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7038184545645552258, guid: ffcffef40903ec647998d3be7bba921d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.6
+      value: 0.7398
       objectReference: {fileID: 0}
     - target: {fileID: 7038184545645552258, guid: ffcffef40903ec647998d3be7bba921d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1371,16 +1371,20 @@ PrefabInstance:
       value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 5954493321315462764, guid: af0dc1ae13870924b8f7eb05e9e5acbd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 6.3298454
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954493321315462764, guid: af0dc1ae13870924b8f7eb05e9e5acbd, type: 3}
       propertyPath: m_LocalScale.y
-      value: 8.639248
+      value: 8.499959
       objectReference: {fileID: 0}
     - target: {fileID: 5954493321315462764, guid: af0dc1ae13870924b8f7eb05e9e5acbd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.163862
+      value: 7.0474
       objectReference: {fileID: 0}
     - target: {fileID: 5954493321315462764, guid: af0dc1ae13870924b8f7eb05e9e5acbd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3109
+      value: 0.6604
       objectReference: {fileID: 0}
     - target: {fileID: 5954493321315462764, guid: af0dc1ae13870924b8f7eb05e9e5acbd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1736,16 +1740,20 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5954493321315462764, guid: af0dc1ae13870924b8f7eb05e9e5acbd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 6.3298454
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954493321315462764, guid: af0dc1ae13870924b8f7eb05e9e5acbd, type: 3}
       propertyPath: m_LocalScale.y
-      value: 8.639248
+      value: 8.499959
       objectReference: {fileID: 0}
     - target: {fileID: 5954493321315462764, guid: af0dc1ae13870924b8f7eb05e9e5acbd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.163862
+      value: 7.0474
       objectReference: {fileID: 0}
     - target: {fileID: 5954493321315462764, guid: af0dc1ae13870924b8f7eb05e9e5acbd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3109
+      value: 0.6604
       objectReference: {fileID: 0}
     - target: {fileID: 5954493321315462764, guid: af0dc1ae13870924b8f7eb05e9e5acbd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1846,8 +1854,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1710677835}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: Change
-        m_Mode: 5
+        m_MethodName: Next
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

@@ -66,8 +66,9 @@
     <Compile Include="Assets\Scripts\Switch.cs" />
     <Compile Include="Assets\Scripts\DragNDrop.cs" />
     <Compile Include="Assets\Scripts\Magnets.cs" />
-    <Compile Include="Assets\Scripts\Joints.cs" />
     <Compile Include="Assets\Scripts\LVLName.cs" />
+    <Compile Include="Assets\Scripts\Joints.cs" />
+    <Compile Include="Assets\Scripts\MZone.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

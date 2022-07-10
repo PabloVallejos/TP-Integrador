@@ -26,6 +26,19 @@ public class ChangeScene : MonoBehaviour
         SceneManager.LoadScene(next);
     }
 
+    public void Next()
+    {
+        var now = SceneManager.GetActiveScene().buildIndex;
+        if (now > 0 && now < 25)
+        {
+            SceneManager.LoadScene(now + 1);
+        }
+        if (now < 0 || now > 25)
+        {
+            SceneManager.LoadScene("LVL select");
+        }
+    }
+
     public void Quit()
     {
         Application.Quit();
