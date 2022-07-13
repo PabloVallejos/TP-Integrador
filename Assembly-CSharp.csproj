@@ -56,6 +56,7 @@
     <Compile Include="Assets\Scripts\Cannon.cs" />
     <Compile Include="Assets\Scripts\Shooter.cs" />
     <Compile Include="Assets\Scripts\DNDisabler.cs" />
+    <Compile Include="Assets\Scripts\MZone.cs" />
     <Compile Include="Assets\Scripts\Controller.cs" />
     <Compile Include="Assets\Scripts\EnableButton.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
@@ -68,7 +69,7 @@
     <Compile Include="Assets\Scripts\Magnets.cs" />
     <Compile Include="Assets\Scripts\LVLName.cs" />
     <Compile Include="Assets\Scripts\Joints.cs" />
-    <Compile Include="Assets\Scripts\MZone.cs" />
+    <Compile Include="Assets\Scripts\ADND.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
