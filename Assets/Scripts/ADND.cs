@@ -34,8 +34,6 @@ public class ADND : MonoBehaviour
             Vector2 cursorPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);//getting cursor position
 
             spring.connectedAnchor = cursorPosition;//the anchor get's cursor's position
-
-
         }
     }
 

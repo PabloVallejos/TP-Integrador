@@ -1281,6 +1281,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 242e78f30c579834896c68215575341e, type: 3}
+--- !u!1 &1354138797 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4746660871826064871, guid: 37d340a550bf29d4db598cc5ef3538a4, type: 3}
+  m_PrefabInstance: {fileID: 149643802}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1354138805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354138797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00725df109022eb49a76a8a8a16b99e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 1
+  maxSpeed: 50
+  obstacleLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1611398940
 GameObject:
   m_ObjectHideFlags: 0
@@ -1534,7 +1556,6 @@ GameObject:
   - component: {fileID: 1710677836}
   - component: {fileID: 1710677835}
   - component: {fileID: 1710677834}
-  - component: {fileID: 1710677839}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1556,6 +1577,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boton: {fileID: 1883634111}
   DND: {fileID: 0}
+  DND2: {fileID: 0}
   s:
   - {fileID: 577471148}
 --- !u!114 &1710677835
@@ -1619,20 +1641,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1710677839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1710677833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 629a0cc2a94fab04baac115b14722eba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 0}
-  IsDrag: 0
 --- !u!1 &1740532470
 GameObject:
   m_ObjectHideFlags: 0

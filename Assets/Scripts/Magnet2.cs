@@ -4,69 +4,79 @@ using UnityEngine;
 
 public class Magnet2 : MonoBehaviour
 {
-    public Transform tg;
+    List<MagnetizedObject> mo;
     public string pole;
-    public float speed;
-    public bool mag;
+    public float range;
+    public float strength;
 
-    private void Start()
+    public void Start()
     {
-        mag = false;
+        mo = new List<MagnetizedObject>();
+        gameObject.GetComponent<SphereCollider>().radius = range;
     }
 
-    void FixedUpdate()
+    public void FixedUpdate()
     {
-        if (mag == true && tg != null)
+        for (int i = 0; i < mo.Count; i++)
         {
-            var step = speed * Time.deltaTime;
-            tg.position = Vector2.MoveTowards(tg.position, transform.position, step);
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == pole || collision.gameObject.tag == "M")
-        {
-            mag = true;
-            tg = collision.gameObject.transform;
-            Debug.Log("Got em");
+            ApplyMagneticForce(mo[i]);
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag == pole)
+        if (other.gameObject.CompareTag(pole))
         {
-            mag = false;
+            MagnetizedObject newMag = new MagnetizedObject();
+            newMag.col = other;
+            newMag.rb = other.GetComponent<Rigidbody>();
+            newMag.t = other.transform;
+            newMag.polarity = 1;
+            mo.Add(newMag);
         }
-        if (collision.gameObject.tag == "M")
+        else if (other.gameObject.CompareTag(this.gameObject.tag))
         {
-            mag = false;
-            tg.transform.SetParent(this.gameObject.transform);
+            MagnetizedObject newMag = new MagnetizedObject();
+            newMag.col = other;
+            newMag.rb = other.GetComponent<Rigidbody>();
+            newMag.t = other.transform;
+            newMag.polarity = -1;
+            mo.Add(newMag);
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    public void OnTriggerExit(Collider other)
     {
-        if (collision.gameObject.tag == pole || collision.gameObject.tag == "M")
+        if (other.CompareTag("Attract") || other.CompareTag("Repel"))
         {
-            mag = true;
-            tg.transform.SetParent(null);
-            Debug.Log("Got em");
-        }
-        if (collision.gameObject.tag == "M")
-        {
-            mag = false;
-            tg.transform.SetParent(null);
+            for (int i = 0; i < mo.Count; i++)
+            {
+                if (mo[i].col == other)
+                {
+                    mo.RemoveAt(i);
+                    break;
+                }
+            }
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void ApplyMagneticForce(MagnetizedObject obj)
     {
-        if (collision.gameObject.tag == "Pole" || collision.gameObject.tag == "M")
-        {
-            mag = false;
-            tg = null;
-        }
+        Vector3 rawDirection = transform.position - obj.t.position;
+
+        float distance = rawDirection.magnitude;
+        float distanceScale = Mathf.InverseLerp(range, 0f, distance);
+        float attractionStrength = Mathf.Lerp(0f, strength, distanceScale);
+
+        obj.rb.AddForce(rawDirection.normalized * attractionStrength * obj.polarity, ForceMode.Force);
     }
 }
+
+public class MagnetizedObject
+{
+    public Collider col;
+    public Rigidbody rb;
+    public Transform t;
+    public int polarity;
+}
+

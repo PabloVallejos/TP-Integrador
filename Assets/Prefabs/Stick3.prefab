@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1835980862626661972}
   - component: {fileID: 7113178570344479417}
   - component: {fileID: 4129016442567516744}
+  - component: {fileID: 8511586808859209720}
   m_Layer: 9
   m_Name: Stick3
   m_TagString: Untagged
@@ -142,3 +143,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &8511586808859209720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464327258724973770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00725df109022eb49a76a8a8a16b99e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 1
+  maxSpeed: 50
+  obstacleLayers:
+    serializedVersion: 2
+    m_Bits: 0

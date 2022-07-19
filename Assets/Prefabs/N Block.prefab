@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 529187030744844790}
   - component: {fileID: 2503472926980462668}
   - component: {fileID: 2503472926980462669}
+  - component: {fileID: 4201661124227024371}
   m_Layer: 10
   m_Name: N Block
   m_TagString: N
@@ -162,7 +163,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.00000023841858, y: -0.020843029}
   serializedVersion: 2
-  m_Radius: 1.8991339
+  m_Radius: 2
 --- !u!114 &2503472926980462669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,8 +176,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 471748a1d4da4a642b55f36d829c640e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tg: {fileID: 0}
+  tgm: {fileID: 0}
+  tgr: {fileID: 0}
+  tgk: {fileID: 0}
   pole: S
   speed: 5
   mag: 0
   rep: 0
+--- !u!114 &4201661124227024371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2503472926980462663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00725df109022eb49a76a8a8a16b99e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 1
+  maxSpeed: 50
+  obstacleLayers:
+    serializedVersion: 2
+    m_Bits: 0

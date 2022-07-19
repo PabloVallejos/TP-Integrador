@@ -1201,6 +1201,28 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 656817128735616038, guid: 546697cb9905b8747b77b8499beea898, type: 3}
   m_PrefabInstance: {fileID: 1420898830}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1471100176 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4746660871826064871, guid: 37d340a550bf29d4db598cc5ef3538a4, type: 3}
+  m_PrefabInstance: {fileID: 149643802}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1471100177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471100176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00725df109022eb49a76a8a8a16b99e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 1
+  maxSpeed: 50
+  obstacleLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1611398940
 GameObject:
   m_ObjectHideFlags: 0

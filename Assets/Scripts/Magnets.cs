@@ -99,6 +99,7 @@ public class Magnets : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        Debug.Log("Out");
         if (collision.gameObject.tag == "Pole" || collision.gameObject.tag == "M")
         {
             mag = false;
@@ -116,7 +117,7 @@ public class Magnets : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    /*private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision == null)
         {
@@ -127,5 +128,5 @@ public class Magnets : MonoBehaviour
             atr = false;
             tgk = null;
         }
-    }
+    }*/
 }

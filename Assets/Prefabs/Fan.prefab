@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1325005649654420925}
   - component: {fileID: 6939635669692935774}
   - component: {fileID: 4227290397728277677}
-  - component: {fileID: 2528757876270413377}
+  - component: {fileID: 6149529595791483555}
   m_Layer: 13
   m_Name: Square (4)
   m_TagString: Untagged
@@ -132,7 +132,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2528757876270413377
+--- !u!114 &6149529595791483555
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -157,7 +157,7 @@ GameObject:
   - component: {fileID: 4008117907249162395}
   - component: {fileID: 6211955291343850216}
   - component: {fileID: 2300545560300367273}
-  - component: {fileID: 8314847779499994446}
+  - component: {fileID: 2287267247283549473}
   m_Layer: 13
   m_Name: Square (2)
   m_TagString: Untagged
@@ -277,7 +277,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8314847779499994446
+--- !u!114 &2287267247283549473
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 8103854213157986377}
   - component: {fileID: 8103854213157986375}
   - component: {fileID: 8103854213157986374}
-  - component: {fileID: 8103854213157986373}
+  - component: {fileID: 7183767976493716029}
   m_Layer: 13
   m_Name: Square (1)
   m_TagString: Untagged
@@ -422,7 +422,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8103854213157986373
+--- !u!114 &7183767976493716029
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -447,6 +447,7 @@ GameObject:
   - component: {fileID: 8103854214280808873}
   - component: {fileID: 8103854214280808870}
   - component: {fileID: 8103854214280808871}
+  - component: {fileID: -6305518269359669724}
   - component: {fileID: 882778117890460141}
   m_Layer: 13
   m_Name: Fan
@@ -571,6 +572,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 3
+--- !u!114 &-6305518269359669724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8103854214280808874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b5464de9af8a1042a7e6bb6cd59b85c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mag: {fileID: 0}
 --- !u!114 &882778117890460141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -596,7 +610,7 @@ GameObject:
   - component: {fileID: 7275175694161855815}
   - component: {fileID: 4640033041287355013}
   - component: {fileID: 4920594771308096492}
-  - component: {fileID: 2800238378863198612}
+  - component: {fileID: 653982686029655852}
   m_Layer: 13
   m_Name: Square (3)
   m_TagString: Untagged
@@ -716,7 +730,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2800238378863198612
+--- !u!114 &653982686029655852
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

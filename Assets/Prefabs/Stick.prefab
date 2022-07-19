@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 7602478539577378583}
   - component: {fileID: 7602478539577378584}
   - component: {fileID: 7602478539577378585}
+  - component: {fileID: 7670224364463130313}
+  - component: {fileID: -3054977497836682866}
   m_Layer: 0
   m_Name: Stick
   m_TagString: Untagged
@@ -132,6 +134,36 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &7670224364463130313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7602478539577378580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b5464de9af8a1042a7e6bb6cd59b85c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mag: {fileID: 0}
+--- !u!114 &-3054977497836682866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7602478539577378580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00725df109022eb49a76a8a8a16b99e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 0
+  maxSpeed: 50
+  obstacleLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &7602478540501380853
 GameObject:
   m_ObjectHideFlags: 0
@@ -144,7 +176,8 @@ GameObject:
   - component: {fileID: 7602478540501380855}
   - component: {fileID: 7602478540501380857}
   - component: {fileID: 7602478540501380856}
-  - component: {fileID: 7602478540501380859}
+  - component: {fileID: 3081087078634131826}
+  - component: {fileID: 6102719195762232059}
   m_Layer: 9
   m_Name: Square (1)
   m_TagString: Untagged
@@ -264,7 +297,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &7602478540501380859
+--- !u!114 &3081087078634131826
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -277,3 +310,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mag: {fileID: 0}
+--- !u!114 &6102719195762232059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7602478540501380853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00725df109022eb49a76a8a8a16b99e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 1
+  maxSpeed: 50
+  obstacleLayers:
+    serializedVersion: 2
+    m_Bits: 0
