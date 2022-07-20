@@ -157,12 +157,12 @@ RectTransform:
   - {fileID: 803294066}
   - {fileID: 1295823977}
   m_Father: {fileID: 921212655}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -323, y: 173}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -256, y: 149.5}
+  m_SizeDelta: {x: 403, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &181137513
 MonoBehaviour:
@@ -215,55 +215,55 @@ MonoBehaviour:
     m_Options:
     - m_Text: Select Puzzle
       m_Image: {fileID: 0}
-    - m_Text: Puzzle 1
+    - m_Text: "Puzzle 1: Introducci\xF3n DND y objetivo"
       m_Image: {fileID: 0}
-    - m_Text: Puzzle 2
+    - m_Text: "Puzzle 2: Magnetismo (atracci\xF3n)"
       m_Image: {fileID: 0}
-    - m_Text: Puzzle 3
+    - m_Text: "Puzzle 3: Magnetismo (repulsi\xF3n) y cajas de metal"
       m_Image: {fileID: 0}
-    - m_Text: Puzzle 4
+    - m_Text: 'Puzzle 4: Gravedad y palos'
       m_Image: {fileID: 0}
-    - m_Text: Puzzle 5
+    - m_Text: 'Puzzle 5: Palos y magnetos'
       m_Image: {fileID: 0}
-    - m_Text: Puzzle 6
+    - m_Text: "Puzzle 6: Palos, magnetos y repulsi\xF3n"
       m_Image: {fileID: 0}
-    - m_Text: Puzzle 7
+    - m_Text: 'Puzzle 7: Magnetos rojos'
       m_Image: {fileID: 0}
-    - m_Text: Puzzle 8
+    - m_Text: 'Puzzle 8: Zonas exclusivas'
       m_Image: {fileID: 0}
-    - m_Text: Puzzle 9
+    - m_Text: 'Puzzle 9: Molino naranja'
       m_Image: {fileID: 0}
-    - m_Text: Puzzle 10
+    - m_Text: "Puzzle 10: Ca\xF1\xF3n automatico"
       m_Image: {fileID: 0}
-    - m_Text: Puzzle 11
+    - m_Text: 'Puzzle 11: Molino gris y palo en T'
       m_Image: {fileID: 0}
-    - m_Text: Puzzle 12
+    - m_Text: "Puzzle 12: Ca\xF1\xF3n manual y bloques dinamicos"
       m_Image: {fileID: 0}
-    - m_Text: Puzzle 13
+    - m_Text: "Puzzle 13: Ca\xF1on manual y molino gris"
       m_Image: {fileID: 0}
-    - m_Text: Puzzle 14
+    - m_Text: "Puzzle 14: Ca\xF1on manual y molino naranja"
       m_Image: {fileID: 0}
-    - m_Text: Puzzle 15
+    - m_Text: "Puzzle 15: Usar f\xEDsica para obtener la llave"
       m_Image: {fileID: 0}
-    - m_Text: Puzzle 16
+    - m_Text: 'Puzzle 16: Molino naranja y magnetos'
       m_Image: {fileID: 0}
-    - m_Text: Puzzle 17
+    - m_Text: "Puzzle 17: Zonas exclusivas y ca\xF1on manual"
       m_Image: {fileID: 0}
-    - m_Text: Puzzle 18
+    - m_Text: 'Puzzle 18: Zonas exclusivas, palo y gravedad'
       m_Image: {fileID: 0}
-    - m_Text: Puzzle 19
+    - m_Text: "Puzzle 19: Sacar llave con el ca\xF1\xF3n manual"
       m_Image: {fileID: 0}
-    - m_Text: Puzzle 20
+    - m_Text: "Puzzle 20: Molinos grises y ca\xF1\xF3n manual"
       m_Image: {fileID: 0}
-    - m_Text: Puzzle 21
+    - m_Text: 'Puzzle 21: Varios'
       m_Image: {fileID: 0}
-    - m_Text: Puzzle 22
+    - m_Text: 'Puzzle 22: 2 llaves'
       m_Image: {fileID: 0}
-    - m_Text: Puzzle 23
+    - m_Text: 'Puzzle 23: Bloques que se mueven'
       m_Image: {fileID: 0}
-    - m_Text: Puzzle 24
+    - m_Text: 'Puzzle 24: Varios'
       m_Image: {fileID: 0}
-    - m_Text: Puzzle 25
+    - m_Text: 'Puzzle 25: Varios'
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -349,7 +349,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 921212655}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -651,10 +651,10 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 8640557563560738252}
   - {fileID: 1205562336}
   - {fileID: 427342669}
   - {fileID: 181137512}
+  - {fileID: 8640557563560738252}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -772,7 +772,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 921212655}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1701,7 +1701,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 656817128735616038, guid: 546697cb9905b8747b77b8499beea898, type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 656817128735616038, guid: 546697cb9905b8747b77b8499beea898, type: 3}
       propertyPath: m_AnchorMax.x
