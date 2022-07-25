@@ -804,7 +804,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6982966083126538227, guid: 944aa68a99c019642b0e4072d849e638, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.747161
+      value: 9.88
       objectReference: {fileID: 0}
     - target: {fileID: 6982966083126538227, guid: 944aa68a99c019642b0e4072d849e638, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1164,6 +1164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boton: {fileID: 1883634111}
   DND: {fileID: 0}
+  DND2: {fileID: 0}
   s:
   - {fileID: 1016572352}
 --- !u!114 &1710677835
